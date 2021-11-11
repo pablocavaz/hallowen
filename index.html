@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Hallowen Party</title>
+
+    <link rel="stylesheet" href="./styles/hallowen.css">
+    <script src="./javacripts/harowilin.js"></script>
+    <link rel="shortcut icon" href="./images/favicon (3).ico" type="image/x-icon">
+
+
+</head>
+
+
+
+<body onload="sonar('cancion')"><!--para cancion de fondo-->
+
+    <!--El sonido no se posiciona en el contenedor, suena de fondo-->
+    <audio id="cancion" controls>
+        <source src="./sounds/Thisisharowin.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="grito">
+        <source src="./sounds/Mujer Gritando.mp3" type="audio/mpeg">
+    </audio>
+
+    
+    <audio id="batman">
+        <source src="./sounds/Igor.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="boom">
+        <source src="./sounds/RisaBruja.mp3" type="audio/mpeg">
+    </audio>
+
+    <!--Este ejercio no es responsive, es sólo para pcs-->
+
+    <div id="container">
+
+        <p id="P1">Scary Hallowen Party</p>
+        <p id="P2">Don't touch the owl</p>
+        <p id="P3">Don't touch pumpkin</p>
+        <p id="P4">Don't touch the ghost</p>
+
+
+        <div id="Owl" onclick="mostrar('Tiasusto');sonar('grito')" 
+                        ondblclick="ocultar('Tiasusto');pausar('grito')">
+        <!--esto es para marcar la zona del buho que se activa-->    
+        </div>
+
+        <div id="Pumpkin" onclick="mostrar('Bats');sonar('batman')"
+                            ondblclick="ocultar('Bats');pausar('batman')">
+        </div>
+
+        <div id="Ghost" onclick="mostrar('Oso');sonar('boom')"
+                            ondblclick="ocultar('Oso');pausar('boom')">
+
+        </div>
+
+
+
+
+
+        <img id="Bats" src="./images/batmanbicho.gif" alt="">
+        <img id="Tiasusto" src="./images/TIASUSTO.gif" alt="">
+        <img id="Oso" src="./images/Elosomamhuevs.gif" alt="">
+    </div>
+
+
+</body>
+</html>

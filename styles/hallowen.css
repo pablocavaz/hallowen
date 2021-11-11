@@ -1,0 +1,103 @@
+/******** HOJA DE ESTILO DEL EJERCICIO DE HALLOWEEN*****/
+/************* 2º SMR - CURSO 2021/2022 ****************/
+/************* AUTOR: PABLO CAMINO VÁZQUEZ**************/
+
+@font-face {
+        font-family: creepy;
+        src: url("../fonts/HALLOWEEN\ STORY.ttf");}
+
+@font-face {
+        font-family: letra1;
+        src: url("../fonts/ScaryBlood.otf");
+}
+
+
+
+
+
+
+
+
+body {background-color: black;
+        font-family: creepy;}
+
+
+#container {position: relative/*Podra moverse del sitio*/
+                width: 5000px;
+                height: 2000px;
+                background-image: url(../images/Boom.jpg);
+                margin: 100px;
+                acolor: white;}
+
+
+
+#P1     {padding: 200px 0 0 400px;
+        text-shadow: 5px 5px 5px red;
+        font-size: 4em;}
+
+#P2     {padding:110px 0 0 2600px;
+        font-size: 2.5em;
+        text-shadow: 4px 4px 4px red;}
+
+#P3     {padding: 900px 0 0 2900px;
+        font-size: 2.5em;
+        text-shadow: 4px 4px 4px red;
+        font-family: letra1;}
+
+#P4     {padding: 10px 0 0 1700px ;
+        font-size: 4em;
+        text-shadow: 5px 5px 5px red;
+        font-family: letra1;}
+
+
+
+
+
+#Pumpkin {position: absolute;
+        left: 3600px;
+        top: 1400px;
+        border: 3px solid hidden;
+        width: 800px;
+        height: 600px;}
+
+
+
+#Ghost {position: absolute;
+        left: 1400px;
+        top: 1200px;
+        border: 3px solid hidden;
+        width: 600px;
+        height: 400px;}
+
+
+#Owl    {position: absolute;
+        left: 2830px;
+        top: 100px;
+        border: 3px solid hidden;/*Luego lo quito*/
+        width: 390px;
+        height: 250px;}
+
+
+
+
+
+
+#Tiasusto {position: absolute;
+        left: 1980px;
+        top: 600px ;
+        width: 700px;
+        visibility: hidden;}
+
+#Bats {position: absolute;
+        left: 1000px;
+        top: 600px;
+        width: 600px;
+        visibility:hidden;}
+
+
+#Oso {position:absolute;
+        left: 400px;
+        top: 700px;
+        width: 900px;
+        visibility: hidden;}
+        
